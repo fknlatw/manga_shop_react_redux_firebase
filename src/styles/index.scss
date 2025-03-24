@@ -1,0 +1,34 @@
+@use "./variables";
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: variables.$mainFont;
+}
+
+.container{
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+button{
+  cursor: pointer;
+}
+
+svg{
+  display: block;
+}
+
+img{
+  display: block;
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}

@@ -1,0 +1,46 @@
+@use "../../styles/variables";
+
+.header{
+    padding: 1.5rem 2.5rem;
+    text-transform: uppercase;
+    background-color: variables.$mainColor;
+    color: variables.$yellowColor;
+    box-shadow: inset 0px -2px 6px 0px #e72db8;
+
+    .header__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .header__logo{
+            max-width: 150px;
+            width: 100%;
+            min-width: 70px;
+            object-fit: cover;
+            transition: filter 0.4s;
+
+            &:hover{
+                -webkit-filter: variables.$yellowShadow;
+                filter: variables.$yellowShadow;
+            }
+        }
+     
+        .header__nav{
+            padding-inline: 2rem 0;
+            .header__list{
+                display: flex;
+                gap: 2rem;
+                .header__list-item{
+                    a{
+                        transition: color 0.4s, text-shadow 0.4s;
+                    }
+
+                    &:hover{
+                        color: variables.$accentYellow;
+                        text-shadow: variables.$textYellowShadow;
+                    }
+                }
+            }
+        }
+    }
+}
